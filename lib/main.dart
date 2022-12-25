@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:portfolio/home.dart';
+import 'package:portfolio/app_bar_actions.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
               color: Colors.black,
             ),
           ),
+          actions: [appBarActions()],
           backgroundColor: Colors.white,
           elevation: 0.0,
         ),

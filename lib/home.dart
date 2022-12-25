@@ -96,7 +96,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                   ],
-                ),
+                ), //Social Links
               ), //links
 
               SizedBox(
