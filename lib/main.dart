@@ -3,16 +3,20 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/Pages/home.dart';
 import 'package:portfolio/app_bar_actions.dart';
+import 'getDimensions.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MaterialApp(home: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
   //const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    finalWidth = width ;
+    double height = MediaQuery.of(context).size.height;
+    finalHeight = height;
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.white,

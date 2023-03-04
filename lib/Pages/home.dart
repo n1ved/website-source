@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/Pages/about.dart';
 import 'package:portfolio/Pages/landing.dart';
+import 'package:portfolio/getDimensions.dart';
 
 class HomeScreen extends StatelessWidget {
   //const ({Key? key}) : super(key: key);
@@ -12,7 +13,11 @@ class HomeScreen extends StatelessWidget {
       child: SingleChildScrollView(
           child: Column(
         children: [
-          LandingPage(),
+          Container(
+            child: LandingPage(),
+            height: finalHeight,
+          ),
+          AboutPage(),
         ],
       )),
     );

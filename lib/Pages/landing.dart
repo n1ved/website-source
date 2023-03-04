@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:portfolio/getDimensions.dart';
 
 class LandingPage extends StatelessWidget {
   final Uri _linkedin = Uri.parse('https://www.linkedin.com/in/n1ved/');
@@ -14,6 +15,7 @@ class LandingPage extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisSize: MainAxisSize.max,
       children: [
         Padding(
           padding: const EdgeInsets.only(left: 20.0, right: 20.0),
