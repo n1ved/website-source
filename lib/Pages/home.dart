@@ -17,7 +17,9 @@ class HomeScreen extends StatelessWidget {
             child: LandingPage(),
             height: finalHeight,
           ),
-          AboutPage(),
+          Container(
+            height: finalHeight,
+            child: AboutPage()),
         ],
       )),
     );
