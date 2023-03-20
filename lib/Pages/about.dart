@@ -2,8 +2,6 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio/getDimensions.dart';
-
 
 class AboutPage extends StatelessWidget {
   // No idea how to write this as multiple lines this doc has became loooooooooong
@@ -15,7 +13,11 @@ class AboutPage extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Expanded(flex:1,child: SizedBox(height: 10,)),
+        Expanded(
+            flex: 1,
+            child: SizedBox(
+              height: 10,
+            )),
         Expanded(
           flex: 1,
           child: Padding(

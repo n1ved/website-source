@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:portfolio/Pages/home.dart';
-import 'package:portfolio/app_bar_actions.dart';
-import 'getDimensions.dart';
+import 'package:portfolio/utilities/app_bar_actions.dart';
+import 'utilities/getDimensions.dart';
 
 void main() {
   runApp(MaterialApp(home: MyApp()));
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    finalWidth = width ;
+    finalWidth = width;
     double height = MediaQuery.of(context).size.height;
     finalHeight = height;
     return MaterialApp(
