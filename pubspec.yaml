@@ -33,6 +33,14 @@ flutter:
       fonts:
         - asset: fonts/FragmentMono-Regular.ttf
 
+    - family: JetbrainsMono
+      fonts:
+        - asset: fonts/JetBrainsMono-Regular.ttf
+
+    - family: MavenPro
+      fonts:
+        - asset: fonts/MavenPro-VariableFont_wght.ttf  
+
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

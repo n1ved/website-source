@@ -1,38 +1,25 @@
 // ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
-
 import 'package:flutter/material.dart';
-import 'package:portfolio/Pages/home.dart';
-import 'package:portfolio/utilities/app_bar_actions.dart';
-import 'utilities/getDimensions.dart';
+import 'package:portfolio/screens/landing.dart';
+import 'utilities/responsive.dart';
+import 'components/appbar.dart';
 
 void main() {
   runApp(MaterialApp(home: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
-  //const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    finalWidth = width;
-    double height = MediaQuery.of(context).size.height;
-    finalHeight = height;
+
+    Responsive responsive = Responsive(width: width);
+
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.white,
-        appBar: AppBar(
-          title: Text(
-            'n1>ed',
-            style: TextStyle(
-              fontFamily: 'Fragement',
-              color: Colors.black,
-            ),
-          ),
-          actions: [appBarActions()],
-          backgroundColor: Colors.white,
-          elevation: 0.0,
-        ),
-        body: HomeScreen(),
+        appBar: responsive.isDesktop() ? desktopAppBar() : mobileAppBar(),
+        body: LandingPage(),
       ),
     );
   }
