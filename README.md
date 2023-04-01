@@ -18,11 +18,15 @@ Created with flutter
 ```markdown
 ├── fonts
 │   └── FragmentMono-Regular.ttf 
+|   └── JetBrainsMono-Regular.ttf
+|   └── MavenPro-VariableFontwght.ttf
 ├── lib
-│   ├── app_bar_actions.dart - Used to provide links in appbar
 │   ├── main.dart
-│   └── Pages
-│       ├── about.dart       - Code for About page
-│       ├── home.dart        - Code for Home page
-│       └── landing.dart
+│   ├── Screens
+│   |   └── landing.dart            //Landing Page of website
+|   ├── Components
+|   |   └── appbar.dart             //used to handle appbars for mobile and desktop
+|   └── Utilities
+|       ├── responsive.dart         //Handles ScreenSize determination
+|       └── constants.dart
 ```
